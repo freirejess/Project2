@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+  
+  background-image: url('back2.jpg');
+  background-position: center top;
+  background-size: cover;
+  
+}
+
+nav {
+	margin:0;
+	
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(ReginaBlack-Hilite.otf);
+}
+
+div {
+   font-family: myFirstFont;
+}
+
+.page-description {
+  border: 1px solid #000;
+  margin: 2px;
+  text-align: center;
+  padding: 30px;
+}
+
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.main-item {
+  margin: 20px;
+}
+
+.main-item .thumbnail {
+  border: 5px;
+}
+
+.logo {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.logo-item {
+  margin: 20px;
+}
+
+.logo-item .thumbnaill {
+  border: 5px;
+}
+
+/* HEADER NAVIGATION */
+
+nav {
+  background-color: #d6c671;
+  padding: 20px;
+}
+
+nav li {
+  display: inline;
+  margin: 0;
+  padding: 0 30px;
+}
+
+nav ul {
+  display: inline;
+}
