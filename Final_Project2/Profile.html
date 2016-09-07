@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>profile</title>
+<link href="profile.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav>
+      <ul>
+        <li><a href="index.html"><font face="myFirstFont" color="#462f25">Home</font></a></li>
+        <li><a href="Profile.html"><font face="myFirstFont" color="#462f25">Profile</font></a></li>
+        <li><a href="Video Translation.html"><font face="myFirstFont" color="#462f25">Video Translation</font></a></li>
+        <li><a href="Map.html"><font face="myFirstFont" color="#462f25">Map</font></a></li>
+        <li><a href="Snap.html"><font face="myFirstFont" color="#462f25">Snapshot</font></a></li>
+      </ul>
+    </nav>
+
+
+    <div >  
+   
+      <figure class="logo-item" style="float: left;">
+        <img class="thumbnaill" src="profilepic.png">
+      </figure>
+      
+      <figure class="logo-item" style="align=middle; style=justify-content: center; padding:20px;">
+        <img class="thumbnail" src="bio1.png"  >
+      </figure>
+      
+      <figure class="logo-item" style="float: left;">
+      <a href="Video Translation.html">
+      	<img class="thumbnaill" src="vbutton.png" style="box-shadow: 5px 5px 5px #615753;">
+        </a>
+      </figure>
+      
+      <figure class="logo-item" style="float: left;">
+      <a href="Map.html">
+      	<img class="thumbnaill" src="mbutton.png" style="box-shadow: 5px 5px 5px #615753;">
+        </a>
+      </figure>
+      
+      <figure class="logo-item" style="float: left;">
+      <a href="Snap.html">
+      	<img class="thumbnaill" src="3button.png" style="box-shadow: 5px 5px 5px #615753;">
+        </a>
+      </figure>
+      
+     </div>
+     
+     <div class="plus">
+      
+      <figure class="plus-item" style="float: left;">
+      <p class="page-description"><font face="myFirstFont" color="#000000" >Been there, Done that.</font></p>
+      </figure>
+      </div>
+      
+      <div class="plus">
+      <figure class="plus-item">
+        <img class="thumbnail" src="beenthere1.png">
+      </figure>
+      </div>
+      
+      
+      <div class="plus">
+      
+      <figure class="plus-item" style="float: left;">
+      <p class="page-description"><font face="myFirstFont" color="#000000" >Where to Next?</font></p>
+      </figure>
+      </div>
+      
+      <div class="plus">
+      <figure class="plus-item">
+        <img class="thumbnail" src="beenthere.png">
+      </figure>
+      
+      </div>
+      
+      <div class="plus">
+      <figure class="plus-item" style="float: right;">
+      <div class="dropdown" style="padding:20px;">
+<button onclick="myFunction()" class="dropbtn" style="box-shadow: 5px 5px 5px #615753;" ><font face="myFirstFont" color="#000000">WHO'RE YOU LOOKING FOR?</font></button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#Old">Old Friends</a>
+    <a href="#Friends">New Friends</a>
+    <a href="#Professors">Professors</a>
+    <a href="#Experts">Experts</a>
+    <a href="#Travel Guides">Travel Guides</a>
+    <a href="#Anyone">Anyone!</a>
+</div>
+</div>
+</figure>
+      
+      </div>
+      
+      <div class="plus">
+      
+      
+<figure class="plus-item" style="float: right;">
+      <img class="thumbnail" style="padding:20px;" src="friends.png">
+      </figure>
+      
+      <div id="wrapper" style="float:right; box-shadow: 5px 5px 5px #615753; padding:20px;">
+    <div id="menu">
+        <p class="welcome">Lets chat, <b></b></p>
+        <div style="clear:both"></div>
+    </div>
+     
+    <div id="chatbox"></div>
+     
+    <form name="message" action="">
+        <input name="usermsg" type="text" id="usermsg" size="63" />
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+    </form>
+</div>
+      
+      </div>
+      
+      
+      
+      
+      
+     
+
+</body>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript">
+// jQuery Document
+$(document).ready(function(){
+ 
+});
+</script>
+</html>
